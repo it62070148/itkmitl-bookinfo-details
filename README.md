@@ -1,17 +1,21 @@
-# Bookinfo Rating Details
+# How to run details service
 
-Book Details service has been developed on Ruby
+## Prerequisite
 
+* Ruby 2.7
 
+```bash
+ruby details.rb 9080
+```
 
 ## How to run with Docker
 
 ```bash
-# Build Docker Image for rating service
+# Build Docker Image for productpage service
 docker build -t details .
 
-# Run ratings service on port 8080
-docker run -d --name details -p 8081:8081 details
+# Run productpage service on port 8081
+docker run -d --name details -p 8081:9080 details
 ```
 
-* Test with path `/ratings/1` and `/health`
+* Test with path `/details/1` and `/health`
