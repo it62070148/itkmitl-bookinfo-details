@@ -19,5 +19,8 @@ spec:
       - name: bookinfo-dev-details
         image: ghcr.io/it62070148/bookinfo-details:dev
         imagePullPolicy: Always
+        env:
+        - name: SERVICE_VERSION
+          value: v1
       imagePullSecrets:
       - name: registry-bookinfo
