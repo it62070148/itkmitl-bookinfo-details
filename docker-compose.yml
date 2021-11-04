@@ -1,0 +1,7 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/it62070148/bookinfo-details:dev
+    ports:
+      - "8081:8081"
+    
